@@ -1,0 +1,106 @@
+===================== Main ======================
+
+// ================== condição (if) ========================
+
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 3;
+        
+// if (quantidadeCompra <= 0)
+// {
+//     Console.WriteLine("Venda inválida!");
+// }
+// else if (quantidadeEmEstoque >= quantidadeCompra ) 
+// {
+//     Console.WriteLine("Venda realizada!");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe, quantidade insuficiente!");
+// }
+
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
+
+// if (letra == "a" ||
+//     letra == "e" ||
+//     letra == "i" ||
+//     letra == "o" ||
+//     letra == "u")
+//     {
+//         Console.WriteLine("É uma vogal!");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Não é uma vogal");
+//     }
+
+// switch(letra)
+//     {
+//         case "a":           
+//         case "e":
+//         case "i":
+//         case "o":
+//         case "u":
+//         Console.WriteLine("É uma vogal");
+//         break;
+        
+//         default:
+//         Console.WriteLine("Não é uma vogal");
+//         break;
+//     }
+
+
+// ===================== funções matemáticas =====================
+
+Calculadora calc = new Calculadora();
+
+calc.Somar(12, 12);
+
+calc.Potencia(3, 3);
+
+calc.Raiz(30);  
+
+===================== Classe Calculadora ==================
+
+using System;
+using System.Collections.Generic;
+using System.IO.Compression;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace projeto_exemplo.Models
+{
+    public class Calculadora
+    {
+        public void Somar(int x, int y)
+        {
+            Console.WriteLine($"{x} + {y} = {x + y}.");
+        }
+        public void Subtrair(int x, int y)
+        {
+            Console.WriteLine($"{x} + {y} = {x - y}.");
+        }
+        public void Dividir(int x, int y)
+        {
+            Console.WriteLine($"{x} / {y} = {x / y}.");
+        }
+        public void Multiplicar(int x, int y)
+        {
+            Console.WriteLine($"{x} * {y} = {x * y}.");
+        }
+
+        //Potencia 
+
+        public void Potencia(int x, int y)
+        {
+            double potencia = Math.Pow(x, y);
+            Console.WriteLine($"{x} ^ {y} = {Math.Round(potencia, 4)}"); //método para arredondar números
+        }
+
+        public void Raiz(double x)
+        {
+            double raiz = Math.Sqrt(x);
+            Console.WriteLine($"Raiz quadrada de {x} é {raiz}");
+        }
+    }
+}

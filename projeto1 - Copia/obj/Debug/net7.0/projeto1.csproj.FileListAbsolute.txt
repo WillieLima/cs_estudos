@@ -1,0 +1,30 @@
+C:\c#\projeto1\bin\Debug\net7.0\projeto1.exe
+C:\c#\projeto1\bin\Debug\net7.0\projeto1.deps.json
+C:\c#\projeto1\bin\Debug\net7.0\projeto1.runtimeconfig.json
+C:\c#\projeto1\bin\Debug\net7.0\projeto1.dll
+C:\c#\projeto1\bin\Debug\net7.0\projeto1.pdb
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.csproj.AssemblyReference.cache
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.AssemblyInfoInputs.cache
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.AssemblyInfo.cs
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.csproj.CoreCompileInputs.cache
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.dll
+C:\c#\projeto1\obj\Debug\net7.0\refint\projeto1.dll
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.pdb
+C:\c#\projeto1\obj\Debug\net7.0\projeto1.genruntimeconfig.cache
+C:\c#\projeto1\obj\Debug\net7.0\ref\projeto1.dll
+C:\c#\projeto1 - Copia\bin\Debug\net7.0\projeto1.exe
+C:\c#\projeto1 - Copia\bin\Debug\net7.0\projeto1.deps.json
+C:\c#\projeto1 - Copia\bin\Debug\net7.0\projeto1.runtimeconfig.json
+C:\c#\projeto1 - Copia\bin\Debug\net7.0\projeto1.dll
+C:\c#\projeto1 - Copia\bin\Debug\net7.0\projeto1.pdb
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.csproj.AssemblyReference.cache
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.AssemblyInfoInputs.cache
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.AssemblyInfo.cs
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.csproj.CoreCompileInputs.cache
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.dll
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\refint\projeto1.dll
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.pdb
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\projeto1.genruntimeconfig.cache
+C:\c#\projeto1 - Copia\obj\Debug\net7.0\ref\projeto1.dll

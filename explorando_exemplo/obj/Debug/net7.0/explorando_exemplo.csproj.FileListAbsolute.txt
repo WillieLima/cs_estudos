@@ -1,0 +1,15 @@
+C:\c#\explorando_exemplo\bin\Debug\net7.0\explorando_exemplo.exe
+C:\c#\explorando_exemplo\bin\Debug\net7.0\explorando_exemplo.deps.json
+C:\c#\explorando_exemplo\bin\Debug\net7.0\explorando_exemplo.runtimeconfig.json
+C:\c#\explorando_exemplo\bin\Debug\net7.0\explorando_exemplo.dll
+C:\c#\explorando_exemplo\bin\Debug\net7.0\explorando_exemplo.pdb
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.csproj.AssemblyReference.cache
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.GeneratedMSBuildEditorConfig.editorconfig
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.AssemblyInfoInputs.cache
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.AssemblyInfo.cs
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.csproj.CoreCompileInputs.cache
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.dll
+C:\c#\explorando_exemplo\obj\Debug\net7.0\refint\explorando_exemplo.dll
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.pdb
+C:\c#\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.genruntimeconfig.cache
+C:\c#\explorando_exemplo\obj\Debug\net7.0\ref\explorando_exemplo.dll
