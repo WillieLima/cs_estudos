@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rangCAXuPYDt9aqOvl+riLJyMAMy0HFEwfUfKAfx72IV3AccGvAS2OZS3NjcLiJbyZPLM9pNnhpZ/na4yazE+w==",
+  "dgSpecHash": "MwxsZhMz+Q9Z0RPZP77/j20uqbexuvoL9HqFBlpLXhdNUEMExMKIsrEvQi65HLvCS/msWnWhDNfWezsMljp0YA==",
   "success": true,
   "projectFilePath": "C:\\c#\\BootCampAulas\\explorando_exemplo\\explorando_exemplo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Wonka\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

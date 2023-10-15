@@ -28,3 +28,5 @@ C:\c#\BootCampAulas\explorando_exemplo\obj\Debug\net7.0\refint\explorando_exempl
 C:\c#\BootCampAulas\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.pdb
 C:\c#\BootCampAulas\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.genruntimeconfig.cache
 C:\c#\BootCampAulas\explorando_exemplo\obj\Debug\net7.0\ref\explorando_exemplo.dll
+C:\c#\BootCampAulas\explorando_exemplo\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\c#\BootCampAulas\explorando_exemplo\obj\Debug\net7.0\explorando_exemplo.csproj.CopyComplete

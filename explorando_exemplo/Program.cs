@@ -2,6 +2,7 @@
 using System.Security.Cryptography;
 using explorando_exemplo.Models;
 using System.Globalization;
+using Newtonsoft.Json;
 
 // ================== Propriedades e campos ==================
 
@@ -218,8 +219,8 @@ using System.Globalization;
 
 // =================== If Ternário ==========================
 
-int numero = 20;
-bool ehPar = true;
+// int numero = 20;
+// bool ehPar = true;
 
 // if (numero % 2 == 0)
 // {
@@ -232,11 +233,41 @@ bool ehPar = true;
 
 // =============== Refatoração com If Ternário =======================
 
-ehPar = numero % 2 == 0;
+// ehPar = numero % 2 == 0;
 
-Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
 
 
 
+// ========================= Nuget, serialização ====================
+
+// ========================= Serializando ========================
+
+// DateTime dataAtual = DateTime.Now;
+
+// List<Venda> listaVendas = new List<Venda>();
+
+// Venda v1 = new Venda(1, "Material de escritório", 25.00M, dataAtual);
+// Venda v2 = new Venda(2, "Licença de software", 150.00M, dataAtual);
+
+// listaVendas.Add(v1);
+// listaVendas.Add(v2);
+
+// string json = JsonConvert.SerializeObject(listaVendas, Formatting.Indented); //Serializar um objeto para o tipo de arquivo .json
+
+// File.WriteAllText("Arquivos/vendas.json", json); //criar um novo arquivo do tipo Json
+
+// Console.WriteLine(json);
+
+// ========================== Deserializando ==========================
+
+string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+foreach(Venda venda in listaVenda)
+{
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preço: {venda.Preco}, Data: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+}
 
 
