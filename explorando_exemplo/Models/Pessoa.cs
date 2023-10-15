@@ -16,6 +16,11 @@ namespace explorando_exemplo.Models
             Nome = nome;
             Sobrenome = sobrenome;
         }
+        public void Deconstruct(out string nome, out string sobrenome) //desconstrutor ***** Não funcional *****
+        {
+            nome = Nome;
+            sobrenome = Sobrenome; 
+        }
         private string _nome;
         private string _sobrenome;
         private int _idade;

@@ -90,92 +90,153 @@ using System.Globalization;
 
 // ======================== Fila ============================
 
-Queue<int> fila = new Queue<int>();
+// Queue<int> fila = new Queue<int>();
 
-fila.Enqueue(2); // acrescentar
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
+// fila.Enqueue(2); // acrescentar
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
 
-foreach(int item in fila)
-{
-    Console.WriteLine(item);
-}
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
-Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove o primeiro elemento
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}"); // remove o primeiro elemento
 
-foreach(int item in fila)
-{
-    Console.WriteLine(item);
-}
+// foreach(int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 // ===================== Pilha ======================
 
-Console.WriteLine("Pilhas");
+// Console.WriteLine("Pilhas");
 
-Stack<int> pilha = new Stack<int>();
+// Stack<int> pilha = new Stack<int>();
 
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
 
-foreach(int i in pilha)
-{
-    Console.WriteLine(i);
-}
+// foreach(int i in pilha)
+// {
+//     Console.WriteLine(i);
+// }
 
-Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
-pilha.Push(20);
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+// pilha.Push(20);
 
-foreach(int i in pilha)
-{
-    Console.WriteLine(i);
-}
+// foreach(int i in pilha)
+// {
+//     Console.WriteLine(i);
+// }
 
 //==================== Dictionary =======================
 
-Console.WriteLine("Dicionário");
+// Console.WriteLine("Dicionário");
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+// Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("SP", "São paulo");
-estados.Add("GO", "Goiás");
-estados.Add("BA", "Bahia");
+// estados.Add("SP", "São paulo");
+// estados.Add("GO", "Goiás");
+// estados.Add("BA", "Bahia");
 
-foreach(KeyValuePair<string, string> itens in estados)
-{
-    Console.WriteLine($"Chave: {itens.Key}, e o valor: {itens.Value}");
-}
+// foreach(KeyValuePair<string, string> itens in estados)
+// {
+//     Console.WriteLine($"Chave: {itens.Key}, e o valor: {itens.Value}");
+// }
 
-Console.WriteLine("Removar elemento do Dictionary");
+// Console.WriteLine("Removar elemento do Dictionary");
 
-estados.Remove("SP");
+// estados.Remove("SP");
 
-foreach(KeyValuePair<string, string> itens in estados)
-{
-    Console.WriteLine($"Chave: {itens.Key}, e o valor: {itens.Value}");
-}
+// foreach(KeyValuePair<string, string> itens in estados)
+// {
+//     Console.WriteLine($"Chave: {itens.Key}, e o valor: {itens.Value}");
+// }
 
-Console.WriteLine("Alterando os dados de um elemento de um Dictionary");
+// Console.WriteLine("Alterando os dados de um elemento de um Dictionary");
 
-estados["GO"] = "Goiás - valor alterado";
+// estados["GO"] = "Goiás - valor alterado";
 
-foreach(KeyValuePair<string, string> itens in estados)
-{
-    Console.WriteLine($"Chave: {itens.Key}, e o valor: {itens.Value}");
-}
+// foreach(KeyValuePair<string, string> itens in estados)
+// {
+//     Console.WriteLine($"Chave: {itens.Key}, e o valor: {itens.Value}");
+// }
 
-// Validando Dictionary
+// // Validando Dictionary
 
-string chave = "GO";
-Console.WriteLine($"Verificando o elemento {chave}");
+// string chave = "GO";
+// Console.WriteLine($"Verificando o elemento {chave}");
 
-if(estados.ContainsKey(chave))
-{
-    Console.WriteLine($"Valor existente: {chave}");
-}
-else
-{
-    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave} "); 
-}
+// if(estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave} "); 
+// }
+
+// ======================== Tuplas =========================
+
+// (int, string, string, decimal) tupla = (25, "Willie", "Barbosa Lima", 1.71M);
+// ValueTuple<int, string, string, decimal> outroExemplo = (1, "Willie", "Lima", 1.71M); //outras sintaxes da tupla
+// var outroExemploTupla = Tuple.Create(1, "Willie", "Lima", 1.71M); //outras sintaxes da tupla
+
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt"); //para descartar um elemento da tupla substitua o elemento por um _
+
+// if(sucesso)
+// {
+//     Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
+//     foreach(string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo!");
+// }
+
+// ===================== Desconstrutor =====================
+
+// Pessoa p1 = new Pessoa("Willie", "Lima");
+
+// (string nome, string sobrenome) = p1;
+
+// Console.WriteLine($"Nome: {nome}, Sobrenome: {sobrenome}");
+
+// =================== If Ternário ==========================
+
+int numero = 20;
+bool ehPar = true;
+
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine($"O número {numero} é par");
+// }
+// else
+// {
+//     Console.WriteLine($"O número {numero} é ímpar");
+// }
+
+// =============== Refatoração com If Ternário =======================
+
+ehPar = numero % 2 == 0;
+
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
+
+
+
+
+
