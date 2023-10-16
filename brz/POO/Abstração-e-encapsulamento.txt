@@ -1,0 +1,247 @@
+========================== Main =========================
+
+using poo.Models;
+
+// ===================== Encapsulamento, Herança e Polimorfismo =======================
+
+// ContaCorrente c1 = new ContaCorrente(123, 1100.00M);
+
+// c1.Saque(200);
+
+// c1.ExibirSaldo();
+
+// Aluno a1 = new Aluno();
+
+// a1.Nome = "Willie";
+// a1.Idade = 25;
+// a1.Nota = 10;
+// a1.Apresentar();
+
+// Professor p1 = new Professor();
+
+// p1.Nome = "Eduardo";
+// p1.Idade = 30;
+// p1.Salario = 3000;
+// p1.Apresentar();
+
+// ======================= Classe Abstrata ==================
+
+Corrente contaCorrente = new Corrente();
+
+contaCorrente.Creditar(1200);
+contaCorrente.ExibirSaldo();
+
+contaCorrente.ToString();
+
+
+========================= Classe Conta Corrente =================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Models
+{
+    public class ContaCorrente
+    {
+        public ContaCorrente(int numeroConta, decimal saldoInicial)
+        {
+            NumeroConta = numeroConta;
+            _saldo = saldoInicial; 
+        }
+        public int NumeroConta { get; set; }
+        private decimal _saldo;
+
+        public void Saque(decimal valor)
+        {
+            if(valor <= _saldo)
+            {
+                _saldo -= valor;
+                Console.WriteLine("Saque realizado.");
+            }
+            else
+            {
+                Console.WriteLine("Saldo insuficiente.");
+            }
+        }  
+        public void ExibirSaldo()
+        {
+            Console.WriteLine($"Saldo disponível: {_saldo}");
+        } 
+    }
+}
+
+========================== Classe Pessoa ==========================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Models
+{
+    public class Pessoa
+    {
+        // public Pessoa(string Nome)
+        // {
+        //     Nome = Nome;
+        // }
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+
+        public virtual void Apresentar() //a palavra chave "virtual" permite que o método serja sobreescrito
+        {
+            if(Nome != null && Idade != 0)
+            {
+                Console.WriteLine($"Meu nome é {Nome} e tenho {Idade} anos!");
+            }
+            else
+            {
+                Console.WriteLine("Erro!");
+            }
+        }
+    }
+}
+
+=============================== Classe Aluno ========================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Models
+{
+    public class Aluno : Pessoa // Herança
+    {
+        // public Aluno(string nome) : base(nome) // Herdando um construtor
+        // {
+
+        // }
+        public double Nota { get; set; }
+
+        public override void Apresentar() // a palavra chave "override" é utilizada para sobreescrever um método
+        {            
+            
+            Console.WriteLine($"Meu nome é {Nome}, tenho {Idade} anos, e tirei nota {Nota}");
+            
+        }
+    }
+}
+
+=========================== Classe Professor =======================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Models
+{
+    public sealed class Professor : Pessoa // sealed é a palavra chave para impedir que uma classe 
+    //seja herdada
+    {
+        public decimal Salario { get; set; }
+
+        public sealed override void Apresentar()
+        {
+            Console.WriteLine($"Meu nome é {Nome}, tenho {Idade} anos e recebo {Salario}");
+        }
+    }
+}
+
+============================= Classe Conta =============================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Models
+{
+    public abstract class Conta
+    {
+        protected decimal _saldo; //protected protege de alterações externas, 
+        //porém permite alteração por parte das classes filhas
+
+        public abstract void Creditar(decimal valor); //a palavra abstract obriga que a classe que a
+        //herdar, implemente o método.
+
+        public void ExibirSaldo()
+        {
+            Console.WriteLine($"Saldo: {_saldo}");
+        }
+    }
+}
+
+================================ Classe Corrente =============================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Models
+{
+    public class Corrente : Conta
+    {
+        public override void Creditar(decimal valor)
+        {
+            _saldo += valor;
+        }
+        
+    }
+}
+
+============================= Classe Calculadora ==============================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using poo.Interfaces;
+
+namespace poo.Models
+{
+    public class Calculadora : ICalculadora
+    {
+        public int Dividir(int numero1, int numero2)
+        {
+            return numero1 / numero2;
+        }
+
+        public int Multiplicar(int numero1, int numero2)
+        {
+            return numero1 * numero2;
+        }
+
+        public int Somar(int numero1, int numero2)
+        {
+            return numero1 + numero2;
+        }
+
+        public int Subtrair(int numero1, int numero2)
+        {
+            return numero1 - numero2;
+        }
+    }
+}
+
+================================= Interface ICalculadora ==========================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace poo.Interfaces
+{
+    public interface ICalculadora
+    {
+        int Somar(int numero1, int numero2);
+        int Subtrair(int numero1, int numero2);
+        int Multiplicar(int numero1, int numero2);
+        int Dividir(int numero1, int numero2);
+    }
+}
