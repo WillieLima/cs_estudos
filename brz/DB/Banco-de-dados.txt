@@ -1,0 +1,33 @@
+--SELECT Nome, Sobrenome, Email FROM Clientes
+--WHERE Nome = 'Adam' AND Sobrenome = 'Barr'
+--ORDER BY Nome, Sobrenome ASC
+
+--SELECT Nome, Sobrenome, Email FROM Clientes
+--WHERE Nome LIKE '%M%'
+--ORDER BY Nome, Sobrenome ASC
+
+--INSERT INTO Clientes VALUES ('Willie', 'Lima', 'email@gmail.com', 1, GETDATE())
+
+--SELECT Nome FROM Clientes 
+--WHERE Nome LIKE 'W%'
+
+SELECT * FROM Clientes WHERE Nome = 'willie'
+
+UPDATE Clientes 
+SET Email = 'email2@gmail.com'
+WHERE Id = 1001
+
+DELETE Clientes
+WHERE Id = 413
+
+CREATE TABLE Produtos (
+	Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	Nome varchar(255) NOT NULL,
+	Cor varchar(50) NULL,
+	Preco Decimal(10,2) NOT NULL,
+	Tamanho varchar(5) NULL,
+	Genero char(1) NULL
+
+)
+
+SELECT * FROM Produtos
