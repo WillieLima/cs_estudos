@@ -13,10 +13,6 @@ namespace exemplo_api.Context
         {
             
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            // You don't actually ever need to call this
-        }
         public AgendaContext(DbContextOptions<AgendaContext> options) : base(options)
         {
 

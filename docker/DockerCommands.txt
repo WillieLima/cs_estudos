@@ -1,0 +1,18 @@
+docker ps = containers em execução
+docker ps -a = containers que foram executados recentemente
+docker run = executar o container
+docker images = mostra as imagens instaladas
+
+docker run -dti ubuntu = deixar o container ativo
+docker exe -it 867 /bin/bash = entrar no container em execução
+docker stop id container = parar container
+docker rm id = excluir container
+docker rmi "image" = excluir a imagem
+docker run -dti --name "nome" ubuntu = nomear container
+docker cp NomeArquivo.txt Ubuntu-A:/destino
+
+apt update
+apt upgrade -y
+apt -y install app
+
+su - = logar no usuário root 
